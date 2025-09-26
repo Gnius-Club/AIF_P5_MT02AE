@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM02A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2A 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes exploren las capacidades de salida de audio de la micro:bit. Que comprendan el concepto fundamental de la comunicación inalámbrica por radio, aprendan a configurar un grupo y a enviar/recibir datos simples. Finalmente, que diseñen y programen un juego interactivo que combine la radio y la lógica, como "Piedra, Papel o Tijera" inalámbrico.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y explicar conceptos.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Aprendizaje guiado por IA sobre nuevos bloques y lógica.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Diseño, obtención del plan e implementación del juego.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Demostración de prototipos y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un juego "Piedra, Papel o Tijera" funcional programado en dos micro:bits que se comunican inalámbricamente, donde cada dispositivo elige, muestra y envía su jugada al ser agitado.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>1 micro:bit (idealmente V2 para sonido) por cada estudiante, trabajando en equipos de 2.</li>
+                                        <li>Computadoras o tabletas para programar.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Asegurar que las micro:bits estén listas y con baterías.</li>
+                                                <li>Tener la presentación de diapositivas (1-12) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, diálogos y tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Ten dos micro:bits a la mano para la demostración de la comunicación por radio.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión de hoy.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, comunicadores del futuro! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción con Xolo ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción y asegúrate de que todos reciban la bienvenida de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Xolo les da la bienvenida: "¡Hola, comunicadores del futuro! Hasta ahora, sus micro:bits han sido como islas, trabajando solas. Hoy les daremos un superpoder que lo cambia todo: ¡la habilidad de hablar entre ellas! Usaremos ondas de radio invisibles para enviar mensajes, y de paso, les enseñaremos a hacer un poco de ruido con música y sonidos."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presentar los conceptos de radio y sonido y el objetivo de la clase.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación de los Conceptos ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Muestra dos micro:bits y explica conceptualmente la radio y el sonido.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Sostén dos micro:bits) "Imaginen que estas dos micro:bits son amigas. ¿Cómo podrían compartir un secreto sin que nadie más se entere y sin usar cables? ¡La respuesta es con la radio!
+                                    <ul>
+                                        <li><strong>Radio:</strong> Cada micro:bit tiene una pequeña antena. Puede enviar y recibir paquetes de información por el aire. Para que se escuchen, debemos sintonizarlas en el mismo 'canal' o grupo.</li>
+                                        <li><strong>Sonido:</strong> Las nuevas micro:bit (V2) tienen un altavoz incorporado aquí atrás. Podemos programarlas para que toquen melodías o emitan sonidos, dándoles una 'voz' para expresarse.</li>
+                                    </ul>"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement" y Formación de Equipos ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto y organiza a los estudiantes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy vamos a convertir nuestras micro:bits en un equipo que se comunica. Al final de esta sesión, podrán decir: <strong>'Yo puedo hacer que mi micro:bit emita un sonido, entiendo cómo funciona la radio para enviar y recibir números, y he programado un juego inalámbrico con otra micro:bit.'</strong> Para esta misión, formarán equipos de 2 personas. ¡Cada uno tendrá una micro:bit para jugar contra su compañero!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los alumnos para que aprendan sobre los bloques de radio y la lógica del juego con Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para Explorar con Xolo ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5 y 6) Anuncia la actividad y da a los alumnos el comando para que Xolo les enseñe.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Entremos al <strong>A.I. GYM</strong> para aprender la magia de la radio! Para que Xolo les revele los secretos de la comunicación inalámbrica, escriban en el chat este comando: <strong>"Mi perfil es [escribe tu perfil] y quiero que me enseñes sobre la magia de la radio y la lógica para crear un juego de Piedra, Papel o Tijera."</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Aprendizaje Guiado ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 7 y 8) Monitorea a los estudiantes y refuerza los conceptos clave que Xolo está explicando.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Xolo les está explicando los 3 pasos de la radio: <strong>establecer el grupo</strong> (como sintonizar la misma estación), <strong>enviar un número</strong> (el mensaje) y <strong>recibir el número</strong> con un nuevo bloque "oyente". También les está dando la clave para el juego: representar Piedra, Papel y Tijera con los números 1, 2 y 3. ¡Asegúrense de entender bien estos pasos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Fases de diseño, obtención del plan y programación del juego inalámbrico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diseño Conceptual (en Equipo) ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a los equipos para que definan su idea y obtengan el plan de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Comienza el <strong>Brain Spark</strong>! Su misión es programar el juego 'Piedra, Papel o Tijera' inalámbrico. Como equipo, pónganse de acuerdo y describan su idea a Xolo. Por ejemplo: <strong>"Queremos que al agitar la micro:bit, se elija al azar un número del 1 al 3. Si sale 1, muestra un ícono de Piedra. Si sale 2, de Papel. Si sale 3, de Tijera. Y al mismo tiempo, envía ese número por radio."</strong> Xolo les dará el plan exacto para lograrlo.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN DE BLOQUES para Juego Inalámbrico
+// Variable para guardar mi jugada
+crear variable "mi_jugada"
+
+AL INICIAR:
+    radio establecer grupo [1] // ¡Cada equipo elige su número!
+
+AL AGITAR:
+    establecer "mi_jugada" a ( escoger al azar de 1 a 3 )
+
+    SI ("mi_jugada" == 1):
+        mostrar icono [Cuadrado Pequeño] // Piedra
+    SINO SI ("mi_jugada" == 2):
+        mostrar icono [Cuadrado] // Papel
+    SINO:
+        mostrar icono [Tijeras] // Tijera
+
+    radio enviar número ("mi_jugada")</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: ¡Manos al Código! ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Indica a los equipos que implementen el plan y lo prueben.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Plan de juego listo! Abran MakeCode y programen su dispositivo. ¡Atención! Es súper importante que ambos miembros del equipo usen el mismo número en el bloque `radio establecer grupo`. Si no, ¡sus micro:bits no se podrán escuchar! Descarguen el código y prueben si al agitar una, la otra recibe el mensaje. ¡Que comience el juego!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Demostración de los juegos y reflexión final.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) Anuncia la actividad y pide una reflexión individual sobre la importancia del grupo de radio.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Excelente trabajo! Llegamos al <strong>Gnius STORM</strong>. Antes de la demostración, piensen: ¿Por qué es tan importante que ambas micro:bits estén en el mismo 'grupo' de radio? ¿Qué pasaría si usaran números diferentes?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Demo) ⏰ 3 minutos</h3>
+                            <p>Pide a una o dos parejas que demuestren su juego en acción.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Es hora de la demostración! ¿Qué pareja voluntaria quiere mostrarnos su juego? Agiten sus micro:bits al mismo tiempo y veamos qué jugadas eligieron. ¡Vamos a ver esa comunicación inalámbrica!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 12) Cierra la sesión y anticipa la clase final del proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genial! Han logrado que sus micro:bits se comuniquen sin cables. Xolo se despide: "¡Han dado un salto gigante! Sus creaciones ya no están solas. Para nuestra sesión final, van a combinar todo lo que han aprendido: los botones, los sensores, la radio y los sonidos, para crear un proyecto final, ¡su propia invención! ¡Prepárense para el gran desafío!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
