@@ -69,10 +69,13 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <strong>Objetivos:</strong>
+                                    <strong>Objetivos de Aprendizaje:</strong>
                                     <ul>
-                                        <li>Que los estudiantes exploren las capacidades de salida de audio de la micro:bit. Que comprendan el concepto fundamental de la comunicación inalámbrica por radio, aprendan a configurar un grupo y a enviar/recibir datos simples. Finalmente, que diseñen y programen un juego interactivo que combine la radio y la lógica, como "Piedra, Papel o Tijera" inalámbrico.</li>
+                                        <li>Programar la micro:bit para reproducir sonidos y melodías.</li>
+                                        <li>Comprender cómo funciona la comunicación por radio para que las micro:bits se "hablen" entre sí.</li>
+                                        <li>Utilizar los bloques de radio para enviar y recibir información de forma inalámbrica.</li>
                                     </ul>
+                                    Objetivo General de la Sesión: Que los estudiantes combinen las funciones de música y radio para programar un juego interactivo y colaborativo, como "Piedra, Papel o Tijera".
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
                                         <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
@@ -196,7 +199,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Entremos al <strong>A.I. GYM</strong> para aprender la magia de la radio! Para que Xolo les revele los secretos de la comunicación inalámbrica, escriban en el chat este comando: <strong>"Mi perfil es [escribe tu perfil] y quiero que me enseñes sobre la magia de la radio y la lógica para crear un juego de Piedra, Papel o Tijera."</strong></p>
+                                <p class="dialogue assistant">¡Entremos al <strong>A.I. GYM</strong> para aprender la magia de la radio! Para que Xolo les revele los secretos de la comunicación inalámbrica, escriban en el chat este comando: "Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes a usar el sonido y la comunicación por radio para crear un juego en la micro:bit.'"</p>
                             </div>
                         </div>
                     </div>
@@ -236,7 +239,7 @@ AL INICIAR:
     radio establecer grupo [1] // ¡Cada equipo elige su número!
 
 AL AGITAR:
-    establecer "mi_jugada" a ( escoger al azar de 1 a 3 )
+    establecer "mi_jugada" a ( escoger al azar de 1 a 3 ) // 1=Piedra, 2=Papel, 3=Tijera
 
     SI ("mi_jugada" == 1):
         mostrar icono [Cuadrado Pequeño] // Piedra
